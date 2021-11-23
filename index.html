@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF-COSTOS-PRESUPUESTOS</title>
+    <link rel="stylesheet" href="/IF-COSTOS/css/style.css">
+</head>
+<body>
+    
+    <form id="form" name="" method="post" class="form">
+        <h4>SISTEMA DE CALCULO DE COSTO DIRECTO</h4>
+        <label>Ventas:</label>
+        <input type="number" class="controls" name="" id="valor1" placeholder="Digita el valor de ventas">
+        <br>
+        <label>Costos variables de produccion</label>
+        <input type="number" class="controls" name="" id="valor2" placeholder="Digita el valor">
+        <br>
+        <label>Costos Fijos de Produccion:</label>
+        <input type="number" class="controls" name="" id="valor3" placeholder="Digita el valor">
+        <br>
+        <label>Costos variables  de venta y administracion</label>
+        <input type="number" class="controls" name="" id="valor4" placeholder="Digita el valor">
+        <br>
+        <label>Costos Fijos de venta y administracion:</label>
+        <input type="number" class="controls" name="" id="valor5" placeholder="Digita el valor">
+        <br>
+        <label>Capacidad normal</label>
+        <input type="number" class="controls" name="" id="valor6" placeholder="Digita el valor">
+        <br>
+        <label>Produccion real</label>
+        <input type="number" class="controls" name="" id="valor7" placeholder="Digita el valor">
+        <br>
+        <label>Inventario Inicial</label>
+        <input type="number" class="controls" name="" id="valor8" placeholder="Digita el valor">
+        <br>
+        <label>Inventario Final</label>
+        <input type="number" class="controls" name="" id="valor9" placeholder="Digita el valor">
+        <br>
+        <label>Precio de venta</label>
+        <input type="number" class="controls" name="" id="valor10" placeholder="Digita el valor">
+        <br>
+        
+        
+
+    
+        <input type="button" value="Calcular resultado de ventas" class="button" onclick="calcular();">
+        <input type="button" value="Calcular costo ventas variable" class="button" onclick="costoventasvariable();">
+        <input type="button" value="Calcular margen produccion" class="button" onclick="margenproduccion();">
+        <input type="button" value="Calcular utilidad produccion" class="button" onclick="utilidad();">
+        <br>
+        
+        <br>
+
+
+        <p class="Presult">El resultado de ventas es: <span id="result"></span></p>
+        <p class="Presult">El costo de ventas variable es: <span id="result2"></span></p>
+        <p class="Presult">Margen de produccion: <span id="result3"></span></p>
+        <p class="Presult">Utilidad de operacion: <span id="result4"></span></p>
+    </form>
+    
+    
+
+    <script src="/IF-COSTOS/js/script.js"></script>
+</body>
+</html>
